@@ -1,0 +1,38 @@
+<template name="edit_project">
+	<div class="container pt">
+		<div class="row">
+			<div class="col-lg-8 col-lg-offset-2">
+				<h2>Edit Projects</h2><small>{{name}}</small>
+				<form class="edit_project_form" enctype="multipart/form-data">
+					<div class="form-group">
+						<label>Name</label>
+						<input type="text" class="form-control" id="name" name="name" value="{{name}}">
+					</div>
+					<div class="form-group">
+						<label>Project Date</label>
+						DATEPICKER
+					</div>
+						<div class="form-group">
+							<label>Client</label>
+							<input type="text" class="form-control" id="client" name="client" value="{{client}}">
+						</div> 
+						<div class="form-group">
+							<label>Type</label>
+							<input type="text" class="form-control" id="type" name="type" value="{{type}}">
+						</div>
+						<div class="form-group">
+							<label>Description</label>
+							<textarea type="text" class="form-control" id="description" name="type" placeholder="Description">{{description}} </textarea> 
+						</div>
+						<div class="form-group">
+							<label>Project Image</label>
+							<input type="file" name="projectImage" id="projectImage">
+						</div>
+
+						<button type="submit" class="btn btn-primary">Submit</button>
+						<a href="/admin/projects" class="btn btn-default">Go Back</a>
+				</form>
+			</div>
+		</div>
+	</div>
+</template>
