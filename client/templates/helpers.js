@@ -36,3 +36,18 @@ Template.layout.events({
 		return false;
 	}
 });
+
+Template.registerHelper('formatDate', function(date){
+	return moment(date).format('MMMM Do YYYY, h:mm:ss a');
+});
+
+Template.registerHelper('getBlogName', function(){
+	return "Dope Jokky";
+});
+
+Template.registerHelper('getAdminName', function(){
+	return "Dj Wallase";
+});
+Template.registerHelper('getAdminImage', function(){
+	return "/assets/img/user.png";
+});

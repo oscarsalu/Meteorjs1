@@ -10,7 +10,10 @@
 					</div>
 					<div class="form-group">
 						<label>Project Date</label>
-						DATEPICKER
+						<div class="input-group datetimepicker">
+						    <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+						    <input class="set-due-date" name="projectDate" id="projectDate" type="text"/>
+						  </div>
 					</div>
 						<div class="form-group">
 							<label>Client</label>
@@ -22,11 +25,11 @@
 						</div>
 						<div class="form-group">
 							<label>Description</label>
-							<textarea type="text" class="form-control" id="description" name="type" placeholder="Description">{{description}} </textarea> 
+							<textarea type="text" class="form-control" id="description" name="description" placeholder="Description">{{description}} </textarea> 
 						</div>
 						<div class="form-group">
 							<label>Project Image</label>
-							<input type="file" name="projectImage" id="projectImage">
+							<input type="file" name="projectImage" id="projectImage">Current file: <img src="{{projectImage}}" class="edit_image">
 						</div>
 
 						<button type="submit" class="btn btn-primary">Submit</button>
